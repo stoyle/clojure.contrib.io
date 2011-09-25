@@ -1,0 +1,8 @@
+h2. io libraries from clojure.contrib working with Clojure 1.3
+
+I could not find modules for the following libraries. We were using these for a clojure workshop, hence this is a straight forward port of these to make them run with Clojure 1.3.
+* clojure.contrib.io
+* clojure.contrib.http.agent
+* clojure.contrib.http.connection
+
+The jar is currently not available in any publicly available maven repo. We have installed it in a private repo to make it work with leiningen.
