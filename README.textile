@@ -6,3 +6,11 @@ I could not find modules for the following libraries. We were using these for a 
 * clojure.contrib.http.connection
 
 The jar is currently not available in any publicly available maven repo. We have installed it in a private repo to make it work with leiningen.
+
+h2. The sources of these libraries are clojure.contrib
+
+Just to make it clear, I cannot take any credit for this. All I have done is to do a trivial migrarion to make them work with Clojure 1.3. The sources of the code is https://github.com/clojure/clojure-contrib, and I used the 1.2.0 branch for source of my modifications.
+
+h2. License
+
+The same as clojure.contrb.
