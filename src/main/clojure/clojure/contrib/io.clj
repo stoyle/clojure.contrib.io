@@ -73,20 +73,24 @@
 (def
  ^{:doc "Name of the default encoding to use when reading & writing.
   Default is UTF-8."
-    :tag "java.lang.String"}
+    :tag "java.lang.String"
+    :dynamic true}
  *default-encoding* "UTF-8")
 
 (def
  ^{:doc "Size, in bytes or characters, of the buffer used when
-  copying streams."}
+  copying streams."
+  :dynamic true}
  *buffer-size* 1024)
 
 (def
- ^{:doc "Type object for a Java primitive byte array."}
+ ^{:doc "Type object for a Java primitive byte array."
+  :dynamic true}
  *byte-array-type* (class (make-array Byte/TYPE 0)))
 
 (def
- ^{:doc "Type object for a Java primitive char array."}
+ ^{:doc "Type object for a Java primitive char array."
+   :dynamic true}
  *char-array-type* (class (make-array Character/TYPE 0)))
 
 
@@ -108,7 +112,8 @@
  ^{:doc "If true, writer, output-stream and spit will open files in append mode.
           Defaults to false.  Instead of binding this var directly, use append-writer,
           append-output-stream or append-spit."
-    :tag "java.lang.Boolean"}
+    :tag "java.lang.Boolean"
+    :dynamic true}
  *append* false)
 
 (defn- assert-not-appending []

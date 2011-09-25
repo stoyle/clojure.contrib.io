@@ -163,7 +163,7 @@
 
 ;;; CONSTRUCTOR
 
-(def *http-agent-defaults*
+(def ^:dynamic *http-agent-defaults*
      {:method "GET"
       :headers {}
       :body nil
